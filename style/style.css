@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --main-color: #006241
+    --main-color: #006241;
+    --secundary-color: #32462F
 }
 
 *{
@@ -19,7 +20,7 @@ header{
     display: flex;
     padding: 1.2rem 0;
     width: 100%;
-    max-width: 1288px;
+    max-width: 80.5rem;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -56,3 +57,144 @@ a{
 .text-header:hover{
     color: var(--main-color);
 }
+
+/*Card Style*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 80.5rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+h2{
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+span{
+    font-weight: 900;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+}
+
+.text-card{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: var(--secundary-color);
+    align-items: center;
+    color: white;
+
+    padding: 48px 24px;
+ }
+
+.plant{
+    flex-direction: row-reverse;
+}
+
+.plant .text-card{
+    background-color: #f0f7f5;
+    color: black;
+}
+
+.people .text-card{
+    background-color: #f7f0e4;
+    color: black;
+}
+
+.people button{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.plant button{
+    background-color: var(--main-color);
+    color: white;
+}
+
+ .image-card{
+    display: flex;
+    flex: 1;
+ }
+
+ #coffee {
+    width: 100%;             /* FAZ A IMAGEM OCUPAR TODA A LARGURA DA METADE */
+    height: 100%;            /* FAZ A IMAGEM OCUPAR TODA A ALTURA */
+    object-fit: cover;       /* CORTE INTELIGENTE PARA NÃO DISTORCER */
+    display: block;
+}
+
+
+ button{
+    height: 40px;
+    width: 135px;
+    border-radius: 1000px;
+    border: none;
+    color: var(--main-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 20px;
+    background-color: white;
+    cursor: pointer;
+ }
+
+
+ footer{
+    width: 100%;
+    max-width: 80.5rem;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+  #footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+
+  .footer-links h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+    .footer-links a{
+    height: auto;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: 300;
+  }
+
+  #footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin: 50px 0 0 0;
+  }
+
+  footer p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px 0;
+  }
